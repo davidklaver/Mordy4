@@ -1,0 +1,214 @@
+body {
+  background-color: #37312b;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mobileHeading {
+  display: none;
+}
+
+.lgHeading {
+  /*display: none;*/
+    position: absolute;
+    right: 2%;
+    width: 50%;
+    font-size: 120px;
+    margin: 2px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    display: block;
+    color: gold;
+    text-shadow: -1px -1px #794000, 1px 1px #794000, 7px 7px 7px black;
+    z-index: 10;
+}
+
+.Mordy {
+  font-size: 250px;
+}
+
+.container {
+  width: 768px;
+  /*margin: auto;*/
+  margin: 5vh 0 0 5vw;
+}
+
+.boxDiv {
+  position: relative;
+  top: 20px;
+  width: 550px;
+  transform: perspective( 1000px ) rotateY( 18deg );
+  background: url(../img/piano.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.box {
+  width: 180px;
+  height: 220px;
+  border:  2px solid #37312b;;
+  display: inline-block;
+  margin: -2px;
+  padding: 0;
+  box-shadow: inset 5px -5px 3px #000;
+  background: rgba(0,0,0,.3);
+  /*border-radius: 5px;*/
+}
+
+.box p {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 1px 1px black, -1px -1px black, -2px -2px 3px black;
+}
+
+.boxDiv:hover .box{
+  background: rgba(0,0,0,0.7);
+}
+
+/*.boxDiv:hover .div1 {
+  background-color: #37312b;
+}*/
+
+.boxDiv .box:hover {
+  background: rgba(0,0,0,0);
+}
+
+.boxDiv .div1 {
+/*  background-color: #37312b;
+  box-shadow: none;*/
+ /* height: 225px;*/
+}
+
+/*.boxDiv .div1:hover {
+  background-color: #37312b;
+  box-shadow: none;
+}*/
+
+/*.div1 p {
+  position: relative;
+  top: 60px;
+  margin: 0;
+}*/
+
+#musicBy {
+/*  bottom: -80%;
+*/  /*font-size: 24px;*/
+}
+
+#Mordy {
+ /* top: 35px;
+  font-size: 48px;
+  right: -65px;
+  transform: rotate(-90deg);*/
+}
+
+.reflection {
+  position: relative;
+  z-index: -5;
+  left: 180px;
+  top: 5px;
+  width: 515px;
+  height: 300px;
+  transform: rotate(173deg) scaleX(-1) skewX(-50deg);
+  filter: blur(1px);
+  opacity: .2;
+}
+
+@media(max-width: 1200px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  .lgHeading {
+    position: relative;
+    width: 90vw;
+    margin: auto;
+  }
+
+  .Mordy {
+    font-size: 120px;
+  }
+
+  .container {
+    width: 70vw;
+    margin: auto;
+  }
+}
+
+@media(max-width: 550px) {
+
+  body {
+    overflow-y: scroll;
+    /*background: rgb(200,200,200);*/
+  }
+
+  .lgHeading {
+    display: none;
+  }
+
+  .mobileHeading {
+    font-size: 36px;
+    margin: 2px;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    display: block;
+    color: gold;
+    text-shadow: -1px -1px #794000, 1px 1px #794000, 7px 7px 7px black;
+
+  }
+
+  .Mordy {
+    font-size: 90px;
+  }
+
+  .container {
+    width: 100vw;
+    margin: auto;
+  }
+
+  .boxDiv {
+    left: -10px;
+    width: 60vw;
+    min-width: 200px;
+    margin: 20px auto;
+    background: url(../img/notes.png);
+    background-size: 100%;
+    transform: perspective(0);
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px black;
+  }
+
+  .div1 {
+    display: none;
+  }
+  
+  .box{
+    width: 100%;
+    background: rgba(0,0,0,.5);
+/*    border-radius: 25px;
+*/    margin: 0;
+  }
+
+  .div2 {
+    border-radius: 25px 25px 0 0;
+  }
+
+  .div6 {
+    border-radius: 0 0 25px 25px;
+  }
+
+  .box p {
+
+  font-family: 'Marck Script';
+    color: gold;
+    font-size: 48px;
+    text-shadow: -1px -1px #794000, 1px 1px #794000, 5px 5px 10px black;
+  }
+
+  .reflection {
+    display: none;
+  }
+}
